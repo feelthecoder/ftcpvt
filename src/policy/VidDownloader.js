@@ -4,8 +4,8 @@ import { Container, ContentWithPaddingXl } from "components/misc/Layouts";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import Header from "components/headers/light.js";
-import Footer from "components/footers/FiveColumnWithInputForm.js";
+import Header from "components/headers/logoheader";
+import Footer from "components/footers/MiniCenteredFooter";
 import { SectionHeading } from "components/misc/Headings";
 
 const HeadingRow = tw.div`flex`;
@@ -34,7 +34,11 @@ const Text = styled.div`
     }
   }
 `;
-export default ({ headingText = "Privacy Policy" }) => {
+
+
+export default ({ headingText = "Privacy Policy - Vid Downloader" }) => {
+
+  
   return (
     <AnimationRevealPage>
       <Header />

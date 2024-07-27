@@ -12,7 +12,7 @@ import BlogIndexPage from "pages/BlogIndex.js";
 import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
-import PolicyVidDownloader from "pages/VidDownloader.js";
+import PolicyVidDownloader from "policy/VidDownloader.js";
 
 import LoginPageImageSrc from "images/demo/LoginPage.jpeg";
 import SignupPageImageSrc from "images/demo/SignupPage.jpeg";
@@ -88,52 +88,47 @@ import MiniCenteredFooter from "components/footers/MiniCenteredFooter.js";
 
 export const components = {
 
-  innerPages: {
+  pages: {
     LoginPage: {
       component: LoginPage,
       imageSrc: LoginPageImageSrc,
       scrollAnimationDisabled: true,
-      url: "/components/innerPages/LoginPage",
+      url: "/login",
     },
     SignupPage: {
       component: SignupPage,
-      url: `/components/innerPages/SignupPage`,
+      url: `/signup`,
       imageSrc: SignupPageImageSrc,
       scrollAnimationDisabled: true,
     },
     PricingPage: {
       component: PricingPage,
-      url: `/components/innerPages/PricingPage`,
+      url: `/pricing`,
       imageSrc: PricingPageImageSrc,
     },
     AboutUsPage: {
       component: AboutUsPage,
-      url: `/components/innerPages/AboutUsPage`,
+      url: `/about`,
       imageSrc: AboutUsPageImageSrc,
     },
     ContactUsPage: {
       component: ContactUsPage,
-      url: `/components/innerPages/ContactUsPage`,
+      url: `/contact`,
       imageSrc: ContactUsPageImageSrc,
     },
     BlogIndexPage: {
       component: BlogIndexPage,
-      url: `/components/innerPages/BlogIndexPage`,
+      url: `/blog`,
       imageSrc: BlogIndexPageImageSrc,
     },
     TermsOfServicePage: {
       component: TermsOfServicePage,
-      url: `/components/innerPages/TermsOfServicePage`,
+      url: `/terms`,
       imageSrc: TermsOfServicePageImageSrc,
     },
     PrivacyPolicyPage: {
       component: PrivacyPolicyPage,
-      url: `/components/innerPages/PrivacyPolicyPage`,
-      imageSrc: PrivacyPolicyPageImageSrc,
-    },
-    VidDownloaderPolicy: {
-      component: PolicyVidDownloader,
-      url: `/components/innerPages/PrivacyPolicyPage`,
+      url: `/policy`,
       imageSrc: PrivacyPolicyPageImageSrc,
     }
   },
@@ -141,8 +136,7 @@ export const components = {
   policy: {
     VidDownloaderPolicy: {
       component: PolicyVidDownloader,
-      url: `/pages/VidDownloader`,
-      imageSrc: PrivacyPolicyPageImageSrc,
+      url: `/policy/VidDownloader`
     }
   },
 
