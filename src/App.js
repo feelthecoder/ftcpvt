@@ -100,7 +100,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
-// import ComponentRenderer from "ComponentRenderer.js";
+import ComponentRenderer from "ComponentRenderer.js";
 import MainPage from "MainPage";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -118,6 +118,7 @@ export default function App() {
           {/* <Route path="/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/:type/:name" element={<ComponentRenderer />} /> */}
           <Route path="/" element={<MainPage />} />
+          <Route path="/:type/:name" element={<ComponentRenderer />} />
         </Routes>
       </Router>
     </>

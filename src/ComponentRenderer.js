@@ -12,6 +12,8 @@ import BlogIndexPage from "pages/BlogIndex.js";
 import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
+import PolicyVidDownloader from "pages/VidDownloader.js";
+
 import LoginPageImageSrc from "images/demo/LoginPage.jpeg";
 import SignupPageImageSrc from "images/demo/SignupPage.jpeg";
 import PricingPageImageSrc from "images/demo/PricingPage.jpeg";
@@ -127,6 +129,19 @@ export const components = {
     PrivacyPolicyPage: {
       component: PrivacyPolicyPage,
       url: `/components/innerPages/PrivacyPolicyPage`,
+      imageSrc: PrivacyPolicyPageImageSrc,
+    },
+    VidDownloaderPolicy: {
+      component: PolicyVidDownloader,
+      url: `/components/innerPages/PrivacyPolicyPage`,
+      imageSrc: PrivacyPolicyPageImageSrc,
+    }
+  },
+
+  policy: {
+    VidDownloaderPolicy: {
+      component: PolicyVidDownloader,
+      url: `/pages/VidDownloader`,
       imageSrc: PrivacyPolicyPageImageSrc,
     }
   },
