@@ -83,7 +83,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   //   </NavLinks>
   // ];
 
-  const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
+  const { showNavLinks, toggleNavbar } = useAnimatedNavToggler();
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
   const defaultLogoLink = (
